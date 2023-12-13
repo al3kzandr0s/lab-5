@@ -1,0 +1,9 @@
+version: '3'
+services:
+  spark:
+    image: jupyter/all-spark-notebook:spark-3.5.0
+    ports:
+      - "8888:8888"
+    volumes:
+      - ./data:/sparkdata
+      - ./scripts:/home/jovyan/work
